@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Dicegame{
 
 
@@ -10,6 +12,18 @@ public class Dicegame{
         int x;
         int y;
         int sum;
+
+
+	
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("What is your name?");
+        System.out.print("> ");
+        String input_text = sc.nextLine( );
+        System.out.println("Hello, " + input_text + "!");
+
+
+	
 	System.out.println("Rolling dice...");
 	
 	x = (int)Math.ceil(Math.random()*6);
